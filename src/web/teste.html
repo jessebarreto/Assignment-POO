@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="teste.css" />
+	<title>Servidores Públicos</title>
+	<script type="text/javascript" src="scriptPOO.js"></script>
+</head>
+
+<body>
+<div id="divSup"><h1>Servidores Públicos</h1></div>
+<div id="divSup2">
+<ul>
+<li><a id="acessoInf" href="http://www.acessoainformacao.gov.br" onmouseover=informa("acessoInf"); onmouseout=apaga();>Acesso à Informação</a></li>
+<li><a id="proj" href="" onmouseover=informa("proj"); onmouseout=apaga();>O projeto</a></li>
+<li><a id="team" href="" onmouseover=informa("team"); onmouseout=apaga();>A equipe</a></li>
+</ul>
+</div>
+
+<div id="divIcones">
+
+<span class="icones">
+<img id="orgao" src="iconscasa.png" onmouseover=informa("orgao"); onmouseout=apaga(); onclick=escreveForm("orgao");>
+</span>
+<span class="icones">
+<img id="servidor" src="iconsman.png" onmouseover=informa("servidor"); onmouseout=apaga(); onclick=escreveForm("servidor");>
+</span>
+<span class="icones">
+<img id="salario" src="iconscifra.png" onmouseover=informa("salario"); onmouseout=apaga(); onclick=escreveForm("salario");>
+</span>
+<div id="informacoes"></div>
+
+</div>
+
+<div id="divResult">
+<fieldset>
+    <legend>PESQUISA</legend>
+<table  class="form"><tr id="formulario"></tr></table>
+</fieldset>
+</div>
+
+<div id="divInf"><p class="rodape">Esta página é uma versão de teste. Todas as informações foram extraídas
+do <a id="link" href="http://www.portaltransparencia.gov.br" onmouseover=informa("portal"); onmouseout=apaga();>Portal da Transparência</a>.</p></div>
+</body>
+</html>
